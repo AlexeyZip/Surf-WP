@@ -9,8 +9,6 @@ html{
 .container{
     max-width: 1224px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 body{
    background-image: url(../img/bg/bg-lines.png);
@@ -26,4 +24,47 @@ a{
 ul,
 li{
     list-style: none;
+}
+
+.read-more-link, a.read-more-link {
+    font-family: 'League-Spartan', sans-serif;
+    color: #333333;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+    &::after{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        background-color: #5da8ef;
+        opacity: .7;
+    }
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    color: #333333;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: center;
+}
+.subtitle{
+    display: block;
+    font-family: 'League-Spartan', serif;
+    color: #5da8ef;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    margin-bottom: 3px;
 }

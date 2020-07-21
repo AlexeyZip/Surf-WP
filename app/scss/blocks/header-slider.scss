@@ -1,3 +1,7 @@
+.slider-wrapper {
+  position: relative;
+}
+
 .slide-item {
   display: flex;
   position: relative;
@@ -11,8 +15,8 @@
   line-height: 64px;
   margin-bottom: 14px;
   span {
-      display: block;
-    color: rgba(93, 168, 239, .9);
+    display: block;
+    color: rgba(93, 168, 239, 0.9);
     font-weight: 600;
     font-size: 12px;
     line-height: 26px;
@@ -21,13 +25,13 @@
 }
 
 .slide-item__text {
-    width: 390px;
-    font-family: 'Poppins', sans-serif;
-    color: #8f8f8f;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: .35px;
+  width: 390px;
+  font-family: 'Poppins', sans-serif;
+  color: #8f8f8f;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px;
   p {
   }
 }
@@ -42,11 +46,84 @@
 .slide-item__img {
   width: 1016px;
   height: 572px;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
 }
 .slide-item__img--bg1 {
   background-image: url(../../img/img/img-header.jpg);
+}
+
+.slider-controls {
+  position: absolute;
+  width: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-controls__left {
+}
+
+.slide-controls-number {
+  font-family: 'League-Spartan', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 4px;
+  margin-top: 6px;
+}
+.slide-controls-number__from {
+  color: #ebebeb;
+}
+
+.slide-controls-number__active {
+  color: #5da8ef;
+}
+
+.slide-controls-number__total {
+  color: #262626;
+}
+
+.slide-controls__right {
+}
+
+.site-desc {
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 58px;
+  right: -50px;
+}
+.site-desc__content {
+  font-family: 'League-Spartan', sans-serif;
+  color: rgba(11, 12, 17, 0.2);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.relative {
+  position: relative;
+  margin-bottom: 95px;
+}
+
+.header-social {
+  width: 20px;
+  position: absolute;
+  right: -60px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-social__item {
+  margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 0;
+  }
 }
